@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inputContainer">
+      <h1>Pizza Delivery Web App</h1>
+      <input
+        type="text"
+        id="name"
+        placeholder="Please Enter Your Name"
+        class="input"
+      /><br />
+      <input
+        type="text"
+        id="address"
+        placeholder="Please Enter Your Address"
+        class="input"
+      /><br />
+      <select name="selectPizza" id="selectPizza" class="input">
+        <option value="fajita" class="input">Fajita</option>
+        <option value="chicken" class="input">Chicken</option>
+        <option value="italian" class="input">Italian</option>
+      </select>
+      <br />
+      <input type="button" value="Place Order" id="btn" />
+    </div>
+    <div class="outputContainer">
+      <h1>Confirmation Message</h1>
+
+      <div id="confirmationMessage"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
